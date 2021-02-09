@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>APP</title>
+        
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+        <link rel="stylesheet" type="text/css" href="index.css">   
+    </head>
+    <body>
+        <h1>Welcome to XMeme</h1>
+        <h2>Post Meme Here</h2>
+        <form class="container" id="form">
+            <div class="mb-3 ">
+              <label for="NAME" class="form-label">Meme Owner</label>
+              <input type="text" class="form-control" id="NAME">
+            </div>
+            <div class="mb-3 ">
+                <label for="CAPTION" class="form-label">Caption</label>
+                <input type="text" class="form-control" id="CAPTION">
+              </div>
+
+              <div class="mb-3 ">
+                <label for="URL" class="form-label">Meme URL</label>
+                <input type="text" class="form-control" id="URL">
+              </div>
+           
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <h2 id="updateCap" style="display: none;" >Update The Meme</h2>
+          <form class="container" id="form1" style="display: none;">
+              <div class="mb-3 ">
+                <label for="NAME" class="form-label">Meme Owner</label>
+                <input type="text" class="form-control" id="NAME">
+              </div>
+              <div class="mb-3 ">
+                  <label for="CAPTION" class="form-label">Caption</label>
+                  <input type="text" class="form-control" id="CAPTION">
+                </div>
+  
+                <div class="mb-3 ">
+                  <label for="URL" class="form-label">Meme URL</label>
+                  <input type="text" class="form-control" id="URL">
+                </div>
+             
+              
+              <button type="submit" id="updateSubmit" class="btn btn-primary">Submit</button>
+            </form>
+        
+        <div class="container">
+            <div class="row">
+        <div id="memeList">
+    
+        </div>
+    </div>
+    </div>
+    </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
