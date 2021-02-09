@@ -8,7 +8,7 @@ var id=0;
 
 
 const getMemes =  ()=>{
-    axios.get('http://localhost:8081/memes/')
+    axios.get('https://xmemeeapi.herokuapp.com/memes')
     .then(res=>{
         console.log(res);
         showMemes(res.data);
@@ -99,7 +99,7 @@ form1.addEventListener('submit',async(e)=>{
 
 
 const sendMeme = (meme)=>{
-    axios.post('http://localhost:8081/memes/',meme)
+    axios.post('https://xmemeeapi.herokuapp.com/memes',meme)
          .then(response=>{
              
              console.log("sent post");
@@ -115,7 +115,7 @@ const sendMeme = (meme)=>{
 }
 
 const updateMeme=(id,obj)=>{
-    axios.patch('http://localhost:8081/memes/'+id,obj)
+    axios.patch('https://xmemeeapi.herokuapp.com/memes/'+id,obj)
          .then(res=>{
             console.log("updated post");
             memeList.innerHTML = "";
