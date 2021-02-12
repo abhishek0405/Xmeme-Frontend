@@ -20,7 +20,10 @@ const getMemes =  ()=>{
 const showMemes = (Memes)=>{
     for(const memeObj of Memes){
         const editButton = document.createElement('a');
-        editButton.innerHTML="edit";
+        editButton.innerHTML="Edit";
+        editButton.classList.add("btn");
+        editButton.classList.add("btn-danger");
+        editButton.classList.add("editbtn");
         //editButton.classList.add("far");
         //editButton.classList.add("fa-edit");
         //edit functionality here
@@ -48,14 +51,16 @@ const showMemes = (Memes)=>{
         const bodyDiv = document.createElement('div');
         newImg.classList.add('card-img-top');
         newdiv.append(editButton);
+        newdiv.append(p2);
         newdiv.append(newImg);
         bodyDiv.classList.add('card-body');
         
         p1.classList.add('card-title');
-        p1.append("Name : ")
+        p1.append("By : ")
         p1.append(memeObj.name);
-        
+        p1.classList.add("info");
         p2.classList.add('card-text');
+        p2.classList.add("info");
         p2.append("Caption: ")
         p2.append(memeObj.caption);
         
